@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const Footer = () => (
   <footer className="bg-gray-100 text-gray-700 text-sm pt-10 pb-6 px-4 sm:px-10">
     <div className="max-w-5xl mx-auto space-y-6">
@@ -13,10 +15,10 @@ const Footer = () => (
 
       {/* Links */}
       <div className="flex flex-wrap justify-center gap-6 text-center">
-        <a href="/" className="hover:text-green-800">Home</a>
-        <a href="/privacy" className="hover:text-green-800">Privacy Policy</a>
-        <a href="/good-faith-estimate" className="hover:text-green-800">Good Faith Estimate</a>
-        <a href="/portal" className="hover:text-green-800">Client Portal</a>
+        <Link href="/" className="hover:text-green-800">Home</Link>
+        <Link href="/privacy" className="hover:text-green-800">Privacy Policy</Link>
+        <Link href="/good-faith-estimate" className="hover:text-green-800">Good Faith Estimate</Link>
+        <Link href="/portal" className="hover:text-green-800">Client Portal</Link>
       </div>
 
       {/* Copyright */}
